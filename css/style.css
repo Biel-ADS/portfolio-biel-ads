@@ -468,16 +468,6 @@ section { padding: 140px 48px; }
   line-height: 1;
 }
 .contact-title { font-size: clamp(2.4rem, 7vw, 5.6rem); font-weight: 900; line-height: 1.02; }
-.contact-link {
-  display: inline-block;
-  margin-top: 44px;
-  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
-  font-weight: 700;
-  border-bottom: 2px solid var(--black);
-  padding-bottom: 6px;
-  cursor: none;
-}
-
 .contact-sub {
   margin-top: 44px;
   font-size: .78rem;
