@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIEL ADS — Dev &amp; Ads</title>
+<meta name="description" content="Sites que vendem. Presença que cresce. Dev &amp; Ads com um único responsável do início ao fim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"><span>VIEW</span></div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+  <figure class="lightbox-frame">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-count"><span id="preloaderNum">0</span></div>
+  <div class="preloader-label">BIEL ADS<em>スタジオ</em></div>
+</div>
+
+<div class="noise-overlay"></div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="logo">
+    <span class="logo-en">BIEL ADS</span>
+    <span class="logo-jp">創造工房</span>
+  </a>
+  <nav class="main-nav">
+    <a href="#work" data-text="Work">Work</a>
+    <a href="#about" data-text="About">About</a>
+    <a href="#services" data-text="Services">Services</a>
+    <a href="#contact" data-text="Contact">Contact</a>
+  </nav>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="pt">PT</button>
+    <span>/</span>
+    <button class="lang-btn" data-lang="jp">日本語</button>
+  </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-kanji" aria-hidden="true">創造</div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow"><span class="reveal-line"><span>Atendimento remoto para todo o Brasil</span></span></p>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span>Sites que vendem.</span></span>
+        <span class="reveal-line"><span>Presença que <em>cresce.</em></span></span>
+      </h1>
+      <p class="hero-desc reveal-line"><span>Um único responsável pelo site, o sistema por trás dele e as redes que trazem cliente novo. Sem agência, sem intermediário — você fala direto comigo do início ao fim.</span></p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Começar um projeto</a>
+        <a href="#services" class="btn-ghost">Ver serviços</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>BRANDING — WEB DESIGN — MOTION — 3D — ESTRATÉGIA — BRANDING — WEB DESIGN — MOTION — 3D — ESTRATÉGIA — </span>
+        <span>BRANDING — WEB DESIGN — MOTION — 3D — ESTRATÉGIA — BRANDING — WEB DESIGN — MOTION — 3D — ESTRATÉGIA — </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-head">
+      <h2 class="section-title"><span class="reveal-line"><span>Trabalhos selecionados</span></span></h2>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-btn" data-filter="institucional">Institucional</button>
+        <button class="filter-btn" data-filter="saas">SaaS/Sistema</button>
+      </div>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-card size-lg" data-cat="ecommerce" data-index="01">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/gil-smartphones.png" alt="Gil Smartphones" loading="lazy">
+          <div class="work-tag">E-commerce</div>
+        </div>
+        <div class="work-info">
+          <h3>Gil Smartphones</h3>
+          <p>Loja de aparelhos e acessórios · dark mode</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="ecommerce" data-index="02">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/nova.png" alt="NOVA" loading="lazy" style="object-position: left center;">
+          <div class="work-tag">E-commerce</div>
+        </div>
+        <div class="work-info">
+          <h3>NOVA</h3>
+          <p>Todo celular, uma loja · showcase 3D</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="saas" data-index="03">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/goldsora.png" alt="Goldsora" loading="lazy" style="object-position: left top;">
+          <div class="work-tag">SaaS/Sistema</div>
+        </div>
+        <div class="work-info">
+          <h3>Goldsora</h3>
+          <p>Painel de vendas, reembolsos e cliques</p>
+        </div>
+      </article>
+
+<article class="work-card size-lg" data-cat="saas" data-index="05">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/cadencia.png" alt="Cadência" loading="lazy">
+          <div class="work-tag">SaaS/Sistema</div>
+        </div>
+        <div class="work-info">
+          <h3>Cadência</h3>
+          <p>Plataforma operacional para times · dark mode</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="institucional" data-index="06">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/tmk.png" alt="TMK Creative Studio" loading="lazy">
+          <div class="work-tag">Institucional</div>
+        </div>
+        <div class="work-info">
+          <h3>TMK</h3>
+          <p>Estúdio criativo · design, code, motion</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="institucional" data-index="07">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/proton-saude.png" alt="Proton Saúde" loading="lazy">
+          <div class="work-tag">Institucional</div>
+        </div>
+        <div class="work-info">
+          <h3>Proton Saúde</h3>
+          <p>Clínica · dark mode, texto em partículas</p>
+        </div>
+      </article>
+
+      <article class="work-card size-lg" data-cat="institucional" data-index="08">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/clinica.png" alt="Clínica Saúde Humanizada" loading="lazy">
+          <div class="work-tag">Institucional</div>
+        </div>
+        <div class="work-info">
+          <h3>Saúde Humanizada</h3>
+          <p>Template de clínica · tema claro</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="institucional" data-index="09">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/forja.png" alt="FORJA" loading="lazy" style="object-position: left center;">
+          <div class="work-tag">Institucional</div>
+        </div>
+        <div class="work-info">
+          <h3>FORJA</h3>
+          <p>Agência criativa · branding, web &amp; produto</p>
+        </div>
+      </article>
+
+      <article class="work-card size-sm" data-cat="institucional" data-index="10">
+        <div class="work-media work-media--wide">
+          <img src="assets/img/biel-ads.png" alt="Biel Ads" loading="lazy">
+          <div class="work-tag">Institucional</div>
+        </div>
+        <div class="work-info">
+          <h3>Biel Ads</h3>
+          <p>Dev &amp; Ads · site, sistema e tráfego</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="manifesto">
+    <div class="manifesto-kanji" aria-hidden="true">間</div>
+    <blockquote class="manifesto-quote">
+      <span class="reveal-line"><span>O espaço vazio</span></span>
+      <span class="reveal-line"><span>importa tanto</span></span>
+      <span class="reveal-line"><span>quanto o cheio.</span></span>
+    </blockquote>
+    <p class="manifesto-sub reveal-line"><span>Ma (間) — o intervalo. Nossa filosofia de design nasce do que decidimos não colocar na tela.</span></p>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="section-title"><span class="reveal-line"><span>O que fazemos</span></span></h2>
+    <ul class="services-list">
+      <li class="service-item">
+        <span class="service-num">01</span>
+        <span class="service-name">Web Design</span>
+        <span class="service-tags">UX/UI · Direção de arte · Prototipagem</span>
+      </li>
+      <li class="service-item">
+        <span class="service-num">02</span>
+        <span class="service-name">Desenvolvimento Front-end</span>
+        <span class="service-tags">HTML/CSS/JS · Animações · Performance</span>
+      </li>
+      <li class="service-item">
+        <span class="service-num">03</span>
+        <span class="service-name">Landing Pages</span>
+        <span class="service-tags">Alta conversão · Responsivo</span>
+      </li>
+      <li class="service-item">
+        <span class="service-num">04</span>
+        <span class="service-name">Sistemas</span>
+        <span class="service-tags">Sob medida · Automação de processos</span>
+      </li>
+      <li class="service-item">
+        <span class="service-num">05</span>
+        <span class="service-name">Tráfego Pago</span>
+        <span class="service-tags">Campanhas · Gestão de anúncios</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-num">02 / About</div>
+      <h2 class="about-title reveal-line"><span>Um estúdio pequeno. Padrão internacional.</span></h2>
+      <p class="about-text">Combinamos a precisão da direção de arte japonesa com a agilidade de um estúdio independente. Cada projeto passa pelas mesmas três etapas: pesquisa, forma, refinamento — sem atalhos.</p>
+      <div class="about-stats">
+        <div class="stat"><strong>40+</strong><span>Projetos entregues</span></div>
+        <div class="stat"><strong>100%</strong><span>Atendimento remoto, direto no WhatsApp</span></div>
+        <div class="stat"><strong>7-15</strong><span>Dias para o site sair do zero e ir ao ar</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-kanji" aria-hidden="true">連絡</div>
+    <h2 class="contact-title">
+      <span class="reveal-line"><span>Vamos criar</span></span>
+      <span class="reveal-line"><span>algo <em>preciso.</em></span></span>
+    </h2>
+    <a href="https://wa.me/5577999210121" target="_blank" rel="noopener" class="contact-link">
+      <span>Falar no WhatsApp</span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <span class="footer-label">Estúdio</span>
+      <a href="#top">BIEL ADS</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Navegação</span>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Social</span>
+      <a href="https://www.instagram.com/bielads.dev/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5577999210121" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Atendimento</span>
+      <span class="footer-plain">Brasil</span>
+      <span class="footer-plain">Remoto — Global</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 BIEL ADS. Todos os direitos reservados.</span>
+    <span>Design &amp; desenvolvimento próprio</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
